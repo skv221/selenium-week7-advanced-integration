@@ -1,0 +1,6 @@
+selenium==4.15.0
+pytest==7.4.2
+pytest-html==3.2.0
+openpyxl==3.1.2
+jsonschema==4.19.0
+webdriver-manager==3.7.1
