@@ -7,7 +7,9 @@ import time
 config = read_json("config\config.json")
 
 browserType = config["browser"]["type"]
+isHeadless = config["browser"]["headless"]
 driverPath = config["driver_paths"]["chrome_driver"]
+
 testURL = config["environment"]["base_url"]
 waitTimw = config["browser"]["implicit_wait"]
 
@@ -16,7 +18,7 @@ reportDir = config["reporting"]["report_path"]
 
 @pytest.fixture
 def setup_browser():
-    driver = openBrowser(browserType, driverPath)
+    driver = openBrowser(browserType, driverPath, isHeadless)
     navigateTo(driver, testURL, waitTimw)
     yield driver
     time.sleep(5)
