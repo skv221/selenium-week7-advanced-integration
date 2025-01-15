@@ -1,7 +1,7 @@
 {
     "browser": {
-      "type": "firefox",
-      "headless": true,
+      "type": "cloud",
+      "headless": false,
       "implicit_wait": 10,
       "sleep_time": 3
     },

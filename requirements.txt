@@ -4,3 +4,4 @@ pytest-html
 openpyxl
 jsonschema
 webdriver-manager
+browserstack-sdk
